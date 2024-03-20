@@ -1,12 +1,11 @@
 import {ReactNode} from "react";
 
-export default function Why(): ReactNode {
-return ( <section className="bg-emerald-600 text-white text-center">
+export default function Why({containerStyle}: {containerStyle: string}): ReactNode {
+return ( <section className={containerStyle}>
 <h2 className="textSize-2 ">¿Por qué aprender inglés?</h2>
 <dl>
 <dt className="textSize-3">Acesso a contenido educativo en inglés</dt>
 <dd className="textSize-5">Gracias a que sé inglés, pude aprender programacíon para hacer paginas web como esta. Hay mucho contenido educativo que no existe en español y por esa razón uso el inglés para aprender otras cosas(O ciertos contenidos existen pero la calidad es inferior) <span className="block textSize-6">Puedo hacer paginas más complicadas que esta, y estuve aprendiendo como hacer videojuegos usando el inglés pero mi computadora se rompio. Nunca he usado el español para aprender programacíon pero he escuchado que es casi imposible aprender programacíon sin saber inglés. Cuando una nueva tecnologia sale, la documentacíon siempre está en inglés y hay millones de videos o contenido educativo que solo está en inglés </span> </dd>
-
 
 
 <dt className="textSize-3">Consumir contenido en su idioma original o consumir contenido que no existe en español</dt>
