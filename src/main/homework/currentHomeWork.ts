@@ -1,5 +1,5 @@
 function tChild(arrayofChild){
-for(let child in arrayofChild){
+for(const child in arrayofChild){
 if(child.current == ''){
 return ''
 }
@@ -10,14 +10,13 @@ return 'none'
 
 function hashEquality(hash){
 if(hash == window.location.hash){
-return ''
-}
+return ''}
 else{
 return 'none'
 }
 }
 
-export default function(hash){
+export default function(){
 	const a1_1 = {current: hashEquality('a1_1')}
 	const a1_2 = {current: hashEquality('a1_2')}
 	const a1_3 = {current: hashEquality('a1_3')}
@@ -34,5 +33,6 @@ export default function(hash){
 	const c2 = {current: 'none'}
 	const c = {current: tChild([c1,c2]),c1,c2}
 
-	return {a,b,c}
+	const current = tChild([a,b,c])
+	return {a,b, current,c}
 }
