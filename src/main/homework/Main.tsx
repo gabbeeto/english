@@ -1,5 +1,6 @@
 import {ReactNode} from "react";
 import HashFnder from "./homeworkObjectForDisplay.js"
+import A1HomeWork from "./a1/Main"
 
 
 export default function HomeWork({containerStyle}: {containerStyle: string}): ReactNode {
@@ -10,7 +11,7 @@ summaryOpen = [true, true, true, true]
 const hashes = HashFnder()
 console.log(hashes)
 return ( <section id="why" className={`${hashes.current} ${containerStyle}`}><h2 className="textSize-2">Home Work</h2>
-
+<A1HomeWork hashObj={hashes.a.a1} / >
 
 
 
