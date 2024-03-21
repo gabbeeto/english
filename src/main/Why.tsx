@@ -1,8 +1,10 @@
 import {ReactNode} from "react";
 
-export function List({open, summary, detail}: {open: boolean, summary: string, detail: ReactNode}){
+function List({open, summary, detail}: {open: boolean, summary: string, detail: ReactNode}){
 return(<li><details open={open} className="textSize-5 text-cyan-200" > <summary className="textSize-3 text-white">{summary}</summary>
 {detail} </details></li>)}
+
+
 
 export default function Why({containerStyle}: {containerStyle: string}): ReactNode {
 let summaryOpen: Array[boolean] = [false, false, false, false]
@@ -24,7 +26,6 @@ return ( <section id="why" className={containerStyle}>
 
 
 <List open={summaryOpen[3]} summary="Te gusta el idioma" detail={<>Este es la razón principal por la cual aprendí inglés por primera vez. Nunca planee aprender otras cosas usando el inglés o enseñar el idioma cuando empezé a aprender. Este idioma siempre me gustó desde el principio. Y aunque ahora le de otras utilidades muy diferentes al idioma, yo empezé a aprender inglés por curiosidad y porque me gustaba y lo pongo aquí porque esta bueno aprender algo si te gusta. </>} / >
-
 
 
 </ul>
